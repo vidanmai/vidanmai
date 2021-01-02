@@ -8,7 +8,7 @@ class Nav extends React.Component {
           <div>
             <div className="links">
               <ul className="listLinks">
-                <Link to="/">
+                <Link to="/" >
                   <li className="link">Hjem</li>
                 </Link>
                 <Link to="/contact">

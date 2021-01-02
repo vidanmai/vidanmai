@@ -8,9 +8,7 @@ class HomePage extends React.Component {
                 <h1>VIDANMAI</h1>
                 <div className="grid">
                     <div id="left">
-                        <div className="center">
-                            <h2>Portfolio</h2>
-                        </div>
+                        <h2>Portfolio</h2>
                     </div>
                     <div id="right">
                         <h2>Projects</h2>

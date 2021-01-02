@@ -38,3 +38,10 @@
     opacity: 0.85;
     transition: all 0.1s;
 }
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+}

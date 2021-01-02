@@ -16,8 +16,13 @@ a:hover {
 }
 
 .link {
-    margin: 5px;
+    margin: 5px 0;
     border: 1px solid teal;
     padding: 1rem;
     width: fit-content;
+}
+
+.links {
+    width: fit-content;
+    display: block;
 }
