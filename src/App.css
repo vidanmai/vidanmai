@@ -7,10 +7,11 @@
 html {
   background-color: #DE354C;
   font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
 .App {
-  background-color: white;
+  background-color: #141c24;
   padding: 10px;
 }
 

@@ -1,0 +1,40 @@
+#home h1 {
+    color: white;
+    padding: 10px;
+    border: 2px solid #3C1874;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+}
+
+#left {
+    background-color: #DE354C;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left:hover {
+    opacity: 0.85;
+    font-size: 0.2s;
+    transition: all 0.1s;
+}
+
+#right {
+    background-color:  #127fc2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right:hover {
+    opacity: 0.85;
+    transition: all 0.1s;
+}
