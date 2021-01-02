@@ -1,3 +1,20 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;800&display=swap');
+
+* {
+
+} 
+
+html {
+  background-color: #DE354C;
+  font-family: 'Montserrat', sans-serif;
 }
 
+.App {
+  background-color: white;
+  padding: 10px;
+}
+
+.case {
+  width: 95%;
+  margin: 0 auto;
+}

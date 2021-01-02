@@ -4,6 +4,7 @@ import HomePage from './components/HomePage';
 import Nav from './components/nav/Nav';
 import Contact from './components/Contact';
 import ScrollToTop from './components/ScrollToTop';
+import ErrorPage from './components/ErrorPage';
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path='/contact' exact component={Contact} />
+          <Route component={ErrorPage} />
         </Switch>
         <ScrollToTop/>
       </div>
