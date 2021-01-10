@@ -1,8 +1,55 @@
+
+.listLinks {
+    margin: 0;
+    padding: 0;
+}
+
+nav .listLinks {
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 97%;
+}
+
+.link {
+    border: 1px solid rgb(15, 211, 211);
+    margin: 0 1rem;
+    padding: 1rem;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+#about {
+    float: left;
+}
+
+#aboutButton {
+    width: fit-content;
+}
+
+#contact {
+    width: fit-content;
+    float: right;
+}
+
+#contactButton {
+    float: right;
+}
+
+.link:hover {
+    background-color: rgba(13, 175, 175, 0.267);
+}
+
+.link:active {
+    background-color: rgba(9, 138, 138, 0.267);
+    border: 1px solid rgb(255, 59, 59);
+}
+
 a {
     text-decoration: none;
     list-style: none;
     color: white;
     font-size: 1.25rem;
+    width: fit-content;
 }
 
 a:link {
@@ -12,17 +59,11 @@ a:visited {
 }
 
 a:hover {
-    color: teal;
+    color: rgb(236, 255, 255);
 }
 
-.link {
-    margin: 5px 0;
-    border: 1px solid teal;
-    padding: 1rem;
-    width: fit-content;
-}
-
-.links {
-    width: fit-content;
-    display: block;
+@media only screen and (max-width: 600px) {
+    nav {
+        width: 100%;
+    }
 }

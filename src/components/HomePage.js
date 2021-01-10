@@ -5,7 +5,7 @@ class HomePage extends React.Component {
     render() {
         return (
             <div className="case" id="home">
-                <h1>VIDANMAI</h1>
+                <h1>VIDAN BA MAI</h1>
                 <div className="grid">
                     <div id="left">
                         <h2>Portfolio</h2>
