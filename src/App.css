@@ -5,6 +5,14 @@ html {
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
+/* Remove highlighting on press - mobile devices */
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 
 .App {
   background-color: #141c24;
