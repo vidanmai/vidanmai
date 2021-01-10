@@ -1,6 +1,6 @@
 import React from 'react';
 import './style/home.css';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class HomePage extends React.Component {
     render() {
