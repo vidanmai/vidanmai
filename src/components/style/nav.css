@@ -7,15 +7,17 @@
 nav .listLinks {
     margin: 0 auto;
     margin-top: 1rem;
-    width: 97%;
+    width: 90%;
 }
 
 .link {
     border: 1px solid rgb(15, 211, 211);
+    box-shadow: 0 0 6px rgb(35 173 255);
     margin: 0 1rem;
     padding: 1rem;
     width: fit-content;
     text-transform: uppercase;
+    border-radius: 2px;
 }
 
 #about {
@@ -41,15 +43,12 @@ nav .listLinks {
 
 .link:active {
     background-color: rgba(9, 138, 138, 0.267);
-    border: 1px solid rgb(255, 59, 59);
 }
 
 a {
     text-decoration: none;
     list-style: none;
     color: white;
-    font-size: 1.25rem;
-    width: fit-content;
 }
 
 a:link {
