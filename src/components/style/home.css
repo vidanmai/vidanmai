@@ -10,14 +10,15 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 300px);
-    grid-gap: 1rem;
+    grid-template-rows: repeat(3, 300px);
+    grid-gap: 2rem;
 }
 
 .box {
     font-size: 22px;
     background-position: center;
     background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #left {
