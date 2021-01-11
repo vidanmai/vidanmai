@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Contact extends React.Component {
-    render() {
+export default function Contact() {
         return (
             <div className="case">
                 
@@ -24,7 +23,4 @@ class Contact extends React.Component {
                 <h1>CONTACT</h1>
             </div>
         );
-    }
 }
-
-export default Contact;

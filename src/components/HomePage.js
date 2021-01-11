@@ -2,8 +2,7 @@ import React from 'react';
 import './style/home.css';
 import { Link } from 'react-router-dom';
 
-class HomePage extends React.Component {
-    render() {
+export default function HomePage() {
         return (
             <div className="case" id="home">
                 <h1>VIDAN BA MAI</h1>
@@ -26,7 +25,4 @@ class HomePage extends React.Component {
                 </div>
             </div>
         );
-    }
 }
-
-export default HomePage;
