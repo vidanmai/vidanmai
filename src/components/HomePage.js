@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 export default function HomePage() {
         return (
             <div className="case" id="home">
-                <h1>VIDAN BA MAI</h1>
                 <div className="grid">
                     <Link to="/academic" id="academic">
                         <div className="box" id="left">

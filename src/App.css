@@ -1,25 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;800&display=swap');
-
 html {
-  background-color: #141c24;
+  margin: 0;
+  padding: 0;
+  display: block;
   font-family: 'Montserrat', sans-serif;
   color: white;
-}
-/* Remove highlighting on press - mobile devices */
-input,
-textarea,
-button,
-select,
-a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background: #12232E;
 }
 
-.App {
-  background-color: #141c24;
+/* Remove highlighting on press - mobile devices */
+
+input, textarea, button, select, a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+.App {}
 
 .case {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
-  padding-bottom: 1rem;
 }

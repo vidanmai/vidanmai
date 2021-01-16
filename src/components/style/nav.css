@@ -1,61 +1,40 @@
-
-.listLinks {
-    margin: 0;
-    padding: 0;
-}
-
-nav .listLinks {
-    margin: 0 auto;
-    margin-top: 1rem;
-    width: 90%;
+nav {
+    margin-bottom: 0.7rem;
 }
 
 .link {
-    border: 1px solid rgb(15, 211, 211);
-    box-shadow: 0 0 6px rgb(35 173 255);
     margin: 0 1rem;
-    padding: 1rem;
-    width: fit-content;
-    text-transform: uppercase;
-    border-radius: 2px;
-}
-
-#about {
-    float: left;
-}
-
-#aboutButton {
-    width: fit-content;
-}
-
-#contact {
-    width: fit-content;
-    float: right;
-}
-
-#contactButton {
-    float: right;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    background: rgba( 255, 255, 255, 0.10);
+    box-shadow: 0 8px 32px 0 rgba(7, 10, 58, 0.37);
+    backdrop-filter: blur( 4.0px);
+    -webkit-backdrop-filter: blur( 4.0px);
+    border-radius: 10px;
+    border-radius: 5px;
+    color: white;
 }
 
 .link:hover {
-    background-color: rgba(13, 175, 175, 0.267);
+    filter: brightness(80%);
 }
 
 .link:active {
-    background-color: rgba(9, 138, 138, 0.267);
+    color: white;
+}
+
+#logoButton {
+    background: rgba(185, 19, 19, 0.589);
 }
 
 a {
     text-decoration: none;
     list-style: none;
-    color: white;
 }
 
-a:link {
-}
+a:link {}
 
-a:visited {
-}
+a:visited {}
 
 a:hover {
     color: rgb(236, 255, 255);
