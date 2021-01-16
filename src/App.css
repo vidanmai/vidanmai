@@ -19,4 +19,5 @@ input, textarea, button, select, a {
 .case {
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 1rem;
 }

@@ -3,16 +3,11 @@ nav {
 }
 
 .link {
-    margin: 0 1rem;
+    margin: 0.75rem 1rem;
     padding: 0.5rem 1rem;
-    font-size: 14px;
-    background: rgba( 255, 255, 255, 0.10);
-    box-shadow: 0 8px 32px 0 rgba(7, 10, 58, 0.37);
-    backdrop-filter: blur( 4.0px);
-    -webkit-backdrop-filter: blur( 4.0px);
-    border-radius: 10px;
-    border-radius: 5px;
+    font-size: 16px;
     color: white;
+    border: 1px solid transparent;
 }
 
 .link:hover {
@@ -23,8 +18,11 @@ nav {
     color: white;
 }
 
-#logoButton {
-    background: rgba(185, 19, 19, 0.589);
+.logo {
+    margin-right: 1.5rem;
+    padding: 1rem 1rem;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 a {
@@ -43,5 +41,12 @@ a:hover {
 @media only screen and (max-width: 600px) {
     nav {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navList {
+        display: grid;
+        grid-template-columns: auto;
     }
 }

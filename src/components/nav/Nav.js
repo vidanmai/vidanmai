@@ -7,9 +7,9 @@ class Nav extends React.Component {
     return (
       <div>
         <nav className="navbar p-4">
-          <ul className="flex space x-2">
+          <ul className="navList flex space x-2">
             <Link to="/" id="logo">
-              <li className="link" id="logoButton">Vi Dan Ba Mai</li>
+              <li className="logo" id="logoButton">Vi Dan Ba Mai</li>
             </Link>
             <Link to="/" id="about">
               <li className="link" id="aboutButton">About</li>
