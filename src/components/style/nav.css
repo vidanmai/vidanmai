@@ -1,27 +1,23 @@
 nav {
+    width: 95%;
+    margin: 0 auto;
     margin-bottom: 0.7rem;
+    padding-top: 0.2rem;
+}
+
+nav a {
+    width: fit-content;
 }
 
 .link {
-    margin: 0.75rem 1rem;
-    padding: 0.5rem 1rem;
-    font-size: 16px;
-    color: white;
-    border: 1px solid transparent;
-}
-
-.link:hover {
-    filter: brightness(80%);
-}
-
-.link:active {
-    color: white;
+    margin: 1.2rem 1.5rem;
+    font-size: 18px;
 }
 
 .logo {
     margin-right: 1.5rem;
     padding: 1rem 1rem;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -30,12 +26,12 @@ a {
     list-style: none;
 }
 
-a:link {}
-
-a:visited {}
-
 a:hover {
-    color: rgb(236, 255, 255);
+    color: rgb(32, 149, 178);
+}
+
+#facebook_icon {
+    fill: #2095B2;
 }
 
 @media only screen and (max-width: 600px) {
@@ -45,7 +41,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-    .navList {
+    .navbar, .navbar ul {
         display: grid;
         grid-template-columns: auto;
     }
