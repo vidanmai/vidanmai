@@ -2,8 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1.5rem;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .box {
@@ -36,15 +35,9 @@
 }
 
 @media only screen and (max-width: 600px) {
-
-    .case {
-        width: 100%;
-    }
-    
     .grid {
         grid-template-columns: auto;
         grid-gap: 20px;
         width: 100%;
-        justify-content: initial;
     }
 }

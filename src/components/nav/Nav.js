@@ -6,7 +6,7 @@ import '../style/nav.css';
 class Nav extends React.Component {
   render() {
     return (
-      <div className>
+      <div>
         <nav className="navbar flex justify-between">
           <div id="logo">
             <Link to="/">
