@@ -6,8 +6,10 @@ import Contact from './components/Contact';
 import ScrollToTop from './components/ScrollToTop';
 import ErrorPage from './components/ErrorPage';
 import Academic from './components/Academic';
-import Blog from './components/Blog';
+import BlogPosts from './components/BlogPosts';
+import Post from './components/Post';
 import Project from './components/Project';
+import Courses from './components/Courses';
 import "./App.css";
 
 function App() {
@@ -19,8 +21,10 @@ function App() {
           <Route path="/" exact component={HomePage} />
           <Route path='/contact' exact component={Contact} />
           <Route path='/academic' exact component={Academic} />
-          <Route path='/blog' exact component={Blog} />
+          <Route path='/blog' exact component={BlogPosts} />
+          <Route path='/blog/:slug' exact component={Post} />
           <Route path='/projects' exact component={Project} />
+          <Route path='/courses' exact component={Courses} />
           <Route component={ErrorPage} />
         </Switch>
         <ScrollToTop/>

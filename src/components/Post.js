@@ -1,47 +1,64 @@
-import React, {useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import Client from './Client';
-import sanityClient from './Client';
+// src/components/Post.js
+
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import sanityClient from "./SanityClient.js";
+import BlockContent from "@sanity/block-content-to-react";
+import imageUrlBuilder from "@sanity/image-url";
+import './style/post.css';
+
+const builder = imageUrlBuilder(sanityClient);
+function urlFor(source) {
+    return builder.image(source);
+}
 
 export default function Post() {
-    const [postData, setPost] = useState(null);
+    const [postData, setPostData] = useState(null);
+    const { slug } = useParams();
 
     useEffect(() => {
-        Client
-            .fetch(`*[_type == "post"]{
-                title,
-                slug,
-                mainImage{
-                    asset->{
-                        _id,
-                        url
-                    },
-                    alt
-                }
-            }`)
-            .then((data) => setPost(data))
+        sanityClient
+            .fetch(
+                `*[slug.current == $slug]{
+          title,
+          slug,
+          mainImage{
+            asset->{
+              _id,
+              url
+             }
+           },
+         body,
+        "name": author->name,
+        "authorImage": author->image
+       }`,
+                { slug }
+            )
+            .then((data) => setPostData(data[0]))
             .catch(console.error);
-    }, []);
+    }, [slug]);
 
+    if (!postData) return <div className="loading">Loading...</div>;
     return (
-        <main className="bg-green-100 min-h-screen p-12">
-            <section className="container mx-auto">
-                <h1 className="text-5xl flex justify-center cursive">Blog Posts Page</h1>
-                <h2 className="text-lg text-gray-600 justify-center mb-12">Welcome to blog posts</h2>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <article>
-                        <Link to={"/post/" + post.slug.current} key={post.slug.current}>
-                            <span className="blog h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400" key={index}>
-                                <img src={post.mainImage.asset.url} 
-                                alt={post.mainImage.alt}/>
-                                <span>
-                                    <h3></h3>
-                                </span>
-                            </span>
-                        </Link>
-                    </article>
+        <div className="body">
+            <div>
+                <h2 className="title">{postData.title}</h2>
+                <div>
+                    <img
+                        src={urlFor(postData.authorImage).width(100).url()}
+                        alt=""
+                    />
+                    <h4>Author: {postData.name}</h4>
                 </div>
-            </section>
-        </main>
-    )
+            </div>
+            <img className="postImg" src={urlFor(postData.mainImage).url()} alt="" />
+            <div>
+                <BlockContent
+                    blocks={postData.body}
+                    projectId={sanityClient.clientConfig.projectId}
+                    dataset={sanityClient.clientConfig.dataset}
+                />
+            </div>
+        </div>
+    );
 }

@@ -14,16 +14,6 @@ class Nav extends React.Component {
             </Link>
           </div>
           <ul className="flex flex-row">
-            {/*
-            <li className="link">
-              <a href="#https://www.facebook.com/vidan97/">
-                <img src={facebookBlack} alt="facebook icon" id="facebookIcon"/>
-              </a>
-            </li>
-             */}
-            <Link to="/" id="about">
-              <li className="link" id="aboutButton">About</li>
-            </Link>
             <Link to="/contact" id="contact">
               <li className="link" id="contactButton">Contact</li>
             </Link>

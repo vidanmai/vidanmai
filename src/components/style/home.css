@@ -1,3 +1,7 @@
+#home {
+    margin-top: 10vh;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -34,10 +38,20 @@
     transition: ease-in-out 0.1s;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+    #home {
+        margin-top: 5vh;
+    }
     .grid {
         grid-template-columns: auto;
         grid-gap: 20px;
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid {
         width: 100%;
     }
 }

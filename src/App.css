@@ -13,12 +13,28 @@ input, textarea, button, select, a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 */
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 
 .case {
   width: 90%;
   margin: 0 auto;
-  margin-top: 10vh;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
