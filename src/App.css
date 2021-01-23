@@ -32,7 +32,7 @@ h2 {
 
 
 .case {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   padding-bottom: 2rem;
 }
@@ -40,5 +40,6 @@ h2 {
 @media only screen and (max-width: 600px) {
   .case {
     margin-top: 5vh;
+    width: 90%;
   }
 }
