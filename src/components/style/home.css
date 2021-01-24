@@ -9,11 +9,11 @@
 }
 
 .box {
-    display: grid;
-    grid-template-columns: 45% 55%;
-    background-color: white;
+    color: white;
+    background-color: #2d545e;
     border: 1px solid rgba(0, 0, 0, 0.24);
     border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: ease-in-out 0.1s;
 }
 
@@ -24,12 +24,12 @@
 .box img {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    height: 120px;
 }
 
 .box h2 {
     margin: auto;
     font-size: 1.3rem;
+    padding: 1rem;
 }
 
 .box:hover {

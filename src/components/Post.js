@@ -22,6 +22,7 @@ export default function Post() {
                 `*[slug.current == $slug]{
           title,
           slug,
+          publishedAt,
           mainImage{
             asset->{
               _id,
@@ -51,7 +52,7 @@ export default function Post() {
                         src={urlFor(postData.authorImage).width(100).url()}
                         alt=""
                     />
-                    <h4>Author: {postData.name}</h4>
+                    {/* <h4>Author: {postData.name}</h4> */}
                 </div>
             </div>
             <img className="postImg" src={urlFor(postData.mainImage).url()} alt="" />
@@ -61,6 +62,8 @@ export default function Post() {
                     projectId={sanityClient.clientConfig.projectId}
                     dataset={sanityClient.clientConfig.dataset}
                 />
+                <br/>
+                <p>Published at {new Date(postData.publishedAt).toLocaleDateString('en-GB')}</p>
             </div>
         </div>
     );

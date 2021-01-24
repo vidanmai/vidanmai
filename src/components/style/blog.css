@@ -10,7 +10,25 @@
 }
 
 .postTitle {
+    color: white;
+    background-color: #336e61;
     border-radius: 0 0 2px 2px;
+    padding: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.postTitle h2 {
+    font-size: 1.05rem;
+}
+
+.postTitle p {
+    font-size: 0.75rem;
+    margin-bottom: 0.4rem;
+}
+
+.postBox:hover {
+    transform: scale(1.02);
+    transition: ease-in-out 0.15ss;
 }
 
 .loading {
