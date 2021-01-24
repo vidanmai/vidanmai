@@ -1,24 +1,49 @@
 nav {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 0.7rem;
     padding-top: 0.2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 1rem;
 }
 
 nav a {
+    border-bottom: 3px solid transparent;
     width: fit-content;
+
+}
+
+.link-row {
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    margin: auto 1rem;
 }
 
 .link {
-    margin: 1.2rem 1.5rem;
-    font-size: 18px;
+    font-size: 20px;
+    margin: 0 1rem;
+    width: fit-content;
+}
+
+nav a:hover {
+    border-bottom: 3px solid #208d75;
 }
 
 .logo {
-    margin-right: 1.5rem;
     padding: 1rem 1rem;
     font-size: 24px;
     font-weight: bold;
+    width: fit-content;
+}
+
+.logo a {
+    width: fit-content;
+}
+
+.logo:hover {
+    color: #208d75;
 }
 
 a {
@@ -26,23 +51,19 @@ a {
     list-style: none;
 }
 
-a:hover {
-    color: rgb(32, 149, 178);
-}
-
-#facebook_icon {
-    fill: #2095B2;
-}
-
 @media only screen and (max-width: 600px) {
     nav {
-        width: 100%;
+        overflow: hidden;
+        grid-template-columns: auto;
     }
-}
-
-@media only screen and (max-width: 600px) {
-    .navbar, .navbar ul {
+    
+    .link-row {
         display: grid;
         grid-template-columns: auto;
+        justify-content: start;
+    }
+
+    .space {
+        display: none;
     }
 }

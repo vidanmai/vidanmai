@@ -6,24 +6,28 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1.5rem;
+    width: 50%;
+    margin: auto;
 }
 
 .box {
-    color: white;
-    background-color: #2d545e;
+    background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.24);
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: ease-in-out 0.1s;
+    font-weight: bold;
 }
 
 .box:hover {
-    color: rgb(32, 149, 178);
+    color: #208d75;
 }
 
 .box img {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 2px 2px 0 0;
 }
 
 .box h2 {
@@ -49,7 +53,12 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+    .box img {
+        height: 200px;
+
+    }
+
     .grid {
         width: 100%;
     }

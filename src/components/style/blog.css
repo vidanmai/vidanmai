@@ -1,20 +1,21 @@
 .postBox {
     width: 100%;
     margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .postBox img {
     width: 100%;
-    max-height: 400px;
+    height: 280px;
+    object-fit: cover;
     border-radius: 2px 2px 0 0;
 }
 
 .postTitle {
     color: white;
-    background-color: #336e61;
+    background-color: #1f7965;
     border-radius: 0 0 2px 2px;
-    padding: 0.5rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0.65rem;
 }
 
 .postTitle h2 {
@@ -36,7 +37,18 @@
 }
 
 @media only screen and (max-width: 900px) {
+    .postBox img {
+        height: 230px;
+    }
 
+    .grid {
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     .grid {
         grid-template-columns: auto;
         grid-gap: 10px;

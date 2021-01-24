@@ -7,13 +7,14 @@ class Nav extends React.Component {
   render() {
     return (
       <div>
-        <nav className="navbar flex justify-between">
-          <div id="logo">
+        <nav className="navbar">
+          <div>
             <Link to="/">
               <li className="logo" id="logoButton">Vi Dan Ba Mai</li>
             </Link>
           </div>
-          <ul className="flex flex-row">
+          <div className="space"></div>
+          <ul className="link-row">
             <Link to="/academic" id="academic">
               <li className="link">Academic</li>
             </Link>

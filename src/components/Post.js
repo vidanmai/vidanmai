@@ -1,7 +1,7 @@
 // src/components/Post.js
 
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import sanityClient from "./SanityClient.js";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
@@ -42,9 +42,6 @@ export default function Post() {
     if (!postData) return <div className="loading">Loading...</div>;
     return (
         <div className="body">
-            <Link to={"/blog/"}>
-                <button>Go back</button>
-            </Link>
             <div>
                 <h2 className="title">{postData.title}</h2>
                 <div>

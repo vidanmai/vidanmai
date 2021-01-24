@@ -12,6 +12,11 @@ blockquote {
     font-style: italic;
 }
 
+.backButton {
+    width: 48px;
+    height: 48px;
+}
+
 @media only screen and (max-width: 900px) {
     .body {
         width: 90%;
