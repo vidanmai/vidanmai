@@ -14,6 +14,7 @@ export default function BlogPosts() {
         `*[_type == "post"]{
         title,
         slug,
+        publishedAt,
         mainImage{
           asset->{
           _id,
@@ -37,6 +38,7 @@ export default function BlogPosts() {
                 <img src={post.mainImage.asset.url} alt="" />
                 <div className="postTitle">
                   <h2>{post.title}</h2>
+                  <p>{new Date(post.publishedAt).toLocaleDateString('en-GB')}</p>
                 </div>
               </span>
             </Link>
