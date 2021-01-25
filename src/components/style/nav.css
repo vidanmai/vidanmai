@@ -1,7 +1,6 @@
 nav {
     width: 100%;
     margin: 0 auto;
-    padding-top: 0.2rem;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
@@ -20,7 +19,7 @@ nav a {
 }
 
 .link {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 1rem;
     width: fit-content;
 }
@@ -31,7 +30,7 @@ nav a:hover {
 }
 
 .logo {
-    padding: 1rem 1rem;
+    margin-left: 1rem;
     font-size: 24px;
     font-weight: bold;
     width: fit-content;
