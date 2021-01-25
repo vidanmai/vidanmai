@@ -9,7 +9,7 @@ nav {
 nav a {
     border-bottom: 3px solid transparent;
     width: fit-content;
-
+    padding: 5px;
 }
 
 .link-row {
@@ -26,7 +26,8 @@ nav a {
 }
 
 nav a:hover {
-    border-bottom: 3px solid #208d75;
+    border-radius: 10px;
+    background-color: #1e857923;
 }
 
 .logo {
