@@ -1,22 +1,47 @@
-#home {
-    margin-top: 10vh;
+.homeGrid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    background: #22be9f;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #093637, #18ac8e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #076364, #1ccaa7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#home #blogLanding {
+    display: none;
+}
+
+#landing {
+    margin: 3rem auto;
+    color: white;
+    font-weight: bold;
+}
+
+#landing h1 {
+    font-size: 50px;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1.5rem;
-    width: 50%;
-    margin: auto;
+    width: 80%;
+    margin: 3rem auto;
 }
 
 .box {
-    background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.24);
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: ease-in-out 0.1s;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     font-weight: bold;
+    transition: ease-in-out 0.1s;
+}
+
+.box h2 {
+    background-color: white;
+    border-radius: 0 0 2px 2px;
 }
 
 .box:hover {
@@ -42,8 +67,12 @@
 }
 
 @media only screen and (max-width: 900px) {
-    #home {
-        margin-top: 5vh;
+    #landing {
+        display: none;
+    }
+    .homeGrid {
+        grid-template-columns: auto;
+        background: transparent;
     }
     .grid {
         grid-template-columns: auto;
@@ -56,9 +85,7 @@
 @media only screen and (max-width: 900px) {
     .box img {
         height: 200px;
-
     }
-
     .grid {
         width: 100%;
     }

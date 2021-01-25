@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "./SanityClient";
 import './style/blog.css';
+import landingPic from './img/world-map-unsplash.jpg';
 
 export default function BlogPosts() {
   const [blogPostsData, setBlogPosts] = useState(null);
@@ -28,21 +29,24 @@ export default function BlogPosts() {
   }, []);
 
   return (
-    <div className="case">
-      <h1 className="title">Latest Posts</h1>
-      <div className="grid">
-        {blogPostsData &&
-          blogPostsData.map((post, index) => (
-            <Link to={"/blog/" + post.slug.current} key={post.slug.current} className="postBox">
-              <span key={index}>
-                <img src={post.mainImage.asset.url} alt="" />
-                <div className="postTitle">
-                  <h2>{post.title}</h2>
-                  <p>{new Date(post.publishedAt).toLocaleDateString('en-GB')}</p>
-                </div>
-              </span>
-            </Link>
-          ))}
+    <div>
+      <img src={landingPic} alt="" id="blogLanding" />
+      <div className="case blog">
+        <h1 className="title">Latest Posts</h1>
+        <div className="grid">
+          {blogPostsData &&
+            blogPostsData.map((post, index) => (
+              <Link to={"/blog/" + post.slug.current} key={post.slug.current} className="postBox">
+                <span key={index}>
+                  <img src={post.mainImage.asset.url} alt="" />
+                  <div className="postTitle">
+                    <h2>{post.title}</h2>
+                    <p>{new Date(post.publishedAt).toLocaleDateString('en-GB')}</p>
+                  </div>
+                </span>
+              </Link>
+            ))}
+        </div>
       </div>
     </div>
   );
