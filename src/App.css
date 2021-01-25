@@ -5,7 +5,6 @@ html {
   font-family: 'Montserrat', sans-serif;
   color: #212121;
   background: #ffffff;
-  scroll-behavior: smooth;
 }
 
 /* Remove highlighting on press - mobile devices
