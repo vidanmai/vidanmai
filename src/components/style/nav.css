@@ -23,8 +23,8 @@ nav a {
     margin: 0 1rem;
     width: fit-content;
 }
+.link-row a:hover {
 
-nav a:hover {
     border-radius: 10px;
     background-color: #1e857923;
 }

@@ -6,6 +6,7 @@ import blogImg from './img/blog_travel.jpg';
 import codingImg from './img/codingBackground.jpg';
 import courseImg from './img/bookpage.jpg';
 import BlogPosts from './BlogPosts';
+import developer from './img/developer.svg';
 
 export default function HomePage() {
     return (
@@ -15,10 +16,11 @@ export default function HomePage() {
                     <div className="hero">
                         <div className="intro">
                             <h1>Hello World</h1>
+                            <img src={developer} alt=""/>
                         </div>
                     </div>
                 </div>
-                <div className="grid">
+                <div className="grid" id="right">
                     <Link to="/academic" id="academic">
                         <div className="box">
                             <img src={academicImg} alt="" />
