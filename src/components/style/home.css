@@ -25,10 +25,11 @@
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1.5rem;
-    width: 80%;
+    width: 90%;
     margin: 3rem auto;
+    padding: 1rem 0;
 }
 
 .box {
@@ -36,6 +37,7 @@
     border-radius: 5px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     font-weight: bold;
+    max-width: 100%;
     transition: ease-in-out 0.1s;
 }
 
@@ -50,7 +52,7 @@
 
 .box img {
     width: 100%;
-    height: 300px;
+    height: 280px;
     object-fit: cover;
     border-radius: 2px 2px 0 0;
 }
@@ -66,27 +68,31 @@
     transition: ease-in-out 0.1s;
 }
 
-@media only screen and (max-width: 900px) {
-    #landing {
-        display: none;
-    }
+@media only screen and (max-width: 1000px) {
     .homeGrid {
         grid-template-columns: auto;
-        background: transparent;
-    }
-    .grid {
-        grid-template-columns: auto;
-        grid-gap: 20px;
-        width: 60%;
-        margin: auto;
     }
 }
 
-@media only screen and (max-width: 900px) {
-    .box img {
-        height: 200px;
+@media only screen and (max-width: 768px) {
+    .homeGrid {
+        grid-template-columns: auto;
+        width: 100%;
     }
     .grid {
-        width: 100%;
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .box img {
+        height: 220px;
+    }
+
+    .grid {
+        grid-template-columns: auto;
+        grid-gap: 20px;
+        width: 70%;
+        margin: auto;
     }
 }

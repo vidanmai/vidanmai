@@ -26,7 +26,7 @@
 
 .postBox img {
     width: 100%;
-    height: 280px;
+    height: 250px;
     object-fit: cover;
     border-radius: 2px 2px 0 0;
 }
@@ -66,9 +66,9 @@
     }
 
     .blog .grid {
-        grid-template-columns: auto;
+        grid-template-columns: repeat(auto-fit, 1fr);
         grid-gap: 10px;
-        width: 100%;
+        width: 70%;
     }
 }
 
@@ -76,6 +76,5 @@
     .blog .grid {
         grid-template-columns: auto;
         grid-gap: 20px;
-        width: 100%;
     }
 }
