@@ -27,7 +27,10 @@ export default function BlogPosts() {
       .then((data) => setBlogPosts(data))
       .catch(console.error);
   }, []);
-
+  //Sort blog posts
+  blogPostsData && blogPostsData.sort(function(a, b) {
+    return new Date(b.publishedAt) - new Date(a.publishedAt);
+  })
   return (
     <div>
       {/* Make img own component */}

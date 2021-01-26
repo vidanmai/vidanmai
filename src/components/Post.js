@@ -44,12 +44,13 @@ export default function Post() {
         <div className="postCase">
             <div>
                 <h2 className="title">{postData.title}</h2>
-                <div>
+                <div className="author">
+                    <p>Written by {postData.name}
+                    </p>
                     <img
                         src={urlFor(postData.authorImage).width(100).url()}
                         alt=""
                     />
-                    {/* <h4>Author: {postData.name}</h4> */}
                 </div>
             </div>
             <img className="postImg" src={urlFor(postData.mainImage).url()} alt="" />
