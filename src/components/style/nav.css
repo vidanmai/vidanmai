@@ -3,6 +3,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     padding: 0.7rem 0;
+    border: 1px solid lightgrey;
 }
 
 .link-row {
@@ -52,6 +53,10 @@ a {
     nav {
         overflow: hidden;
         grid-template-columns: auto;
+    }
+
+    .logo {
+        margin: auto;
     }
     
     .link-row {

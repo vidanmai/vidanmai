@@ -1,10 +1,11 @@
-.body {
+.postCase{
     width: 50%;
     margin: 0 auto;
+    margin-top: 2rem;
     padding-bottom: 2rem;
 }
 
-.body img {
+.postCase img {
     margin: 0 auto;
 }
 
@@ -17,8 +18,12 @@ blockquote {
     height: 48px;
 }
 
+.body {
+    margin: 1rem auto;
+}
+
 @media only screen and (max-width: 900px) {
-    .body {
+    .postCase {
         width: 95%;
     }
 }

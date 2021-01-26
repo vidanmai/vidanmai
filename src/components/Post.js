@@ -41,7 +41,7 @@ export default function Post() {
 
     if (!postData) return <div className="loading">Loading...</div>;
     return (
-        <div className="body">
+        <div className="postCase">
             <div>
                 <h2 className="title">{postData.title}</h2>
                 <div>
@@ -53,7 +53,7 @@ export default function Post() {
                 </div>
             </div>
             <img className="postImg" src={urlFor(postData.mainImage).url()} alt="" />
-            <div>
+            <div className="body">
                 <BlockContent
                     blocks={postData.body}
                     projectId={sanityClient.clientConfig.projectId}
