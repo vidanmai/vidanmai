@@ -1,14 +1,8 @@
 nav {
     width: 100%;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-}
-
-nav a {
-    border-bottom: 3px solid transparent;
-    width: fit-content;
-    padding: 5px;
+    padding: 0.7rem 0;
 }
 
 .link-row {
@@ -16,6 +10,12 @@ nav a {
     align-content: flex-end;
     justify-content: space-evenly;
     margin: auto 1rem;
+}
+
+.link-row a {
+    border-bottom: 3px solid transparent;
+    width: fit-content;
+    padding: 5px;
 }
 
 .link {
@@ -30,15 +30,13 @@ nav a {
 }
 
 .logo {
-    margin-left: 1rem;
     font-size: 24px;
     font-weight: bold;
     width: fit-content;
     white-space: nowrap;
-}
-
-.logo a {
-    width: fit-content;
+    margin: auto 0;
+    margin-left: 1rem;
+    letter-spacing: 1px;
 }
 
 .logo:hover {
@@ -57,7 +55,7 @@ a {
     }
     
     .link-row {
-        display: grid;
+        display: none;
         grid-template-columns: auto;
         justify-content: start;
     }

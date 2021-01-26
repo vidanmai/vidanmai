@@ -17,6 +17,10 @@ export default function HomePage() {
                         <div className="intro">
                             <h1>Hello World</h1>
                             <img src={developer} alt=""/>
+                            {/*
+                            <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:1117468525&size=detail&theme=light" width="300" height="56" scrolling="no" frameBorder="0" style={{border: 'none', overflow:'hidden', margin: '0.5rem auto'}} allowtransparency="true"></iframe>
+                            <iframe id="spotifyPlayer" src="https://open.spotify.com/embed/playlist/66UzACdEbrcESDKlRCJ001" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                             */}
                         </div>
                     </div>
                 </div>

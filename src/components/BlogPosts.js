@@ -30,23 +30,26 @@ export default function BlogPosts() {
 
   return (
     <div>
+      {/* Make img own component */}
       <img src={landingPic} alt="" id="blogLanding" />
       <div className="case blog">
         <h1 className="title">Latest Posts</h1>
-        <div className="grid">
-          {blogPostsData &&
-            blogPostsData.map((post, index) => (
-              <Link to={"/blog/" + post.slug.current} key={post.slug.current} className="postBox">
-                <span key={index}>
-                  <img src={post.mainImage.asset.url} alt="" />
-                  <div className="postTitle">
-                    <h2>{post.title}</h2>
-                    <p>{new Date(post.publishedAt).toLocaleDateString('en-GB')}</p>
-                  </div>
-                </span>
-              </Link>
-            ))}
-        </div>
+        <div className="postGrid">
+            {blogPostsData &&
+              blogPostsData.map((post, index) => (
+                <div className="postBox" key={post.slug.current}>
+                  <Link to={"/blog/" + post.slug.current}>
+                  <span key={index}>
+                    <img src={post.mainImage.asset.url} alt="" />
+                    <div className="postTitle">
+                      <h2>{post.title}</h2>
+                      <p>{new Date(post.publishedAt).toLocaleDateString('en-GB')}</p>
+                    </div>
+                  </span>
+                </Link>
+                </div>
+              ))}
+          </div>
       </div>
     </div>
   );

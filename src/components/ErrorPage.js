@@ -1,13 +1,14 @@
 import React from 'react';
 import './style/glitch.css';
+import errorImg from './img/error.svg';
 
 class ErrorPage extends React.Component {
     render() {
         return (
             <div className="case">
-                <div className="container">
-                    <div className="glitch" data-text="404"></div>
-                </div>
+                <span className="imgContainer">
+                    <img src={errorImg} alt="" />
+                </span>
             </div>
 
         );
