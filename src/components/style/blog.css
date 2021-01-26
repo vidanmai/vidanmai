@@ -75,7 +75,7 @@
 @media only screen and (max-width: 600px) {
     .blog .grid {
         grid-template-columns: auto;
-        width: 80;
+        width: 90%;
         grid-gap: 20px;
     }
 }
