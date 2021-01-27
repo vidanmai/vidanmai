@@ -1,11 +1,9 @@
-.postCase {
+.postBody {
     width: 50%;
     margin: 0 auto;
-    margin-top: 2rem;
-    padding-bottom: 2rem;
 }
 
-.postCase img {
+.postBody img {
     margin: 0 auto;
 }
 
@@ -76,7 +74,7 @@ blockquote {
 }
 
 @media only screen and (max-width: 900px) {
-    .postCase {
+    .postBody {
         width: 100%;
     }
     .body {
@@ -85,7 +83,7 @@ blockquote {
 }
 
 @media only screen and (max-width: 900px) {
-    .postCase {
+    .postBody {
         width: 100%;
     }
     .body {

@@ -29,16 +29,12 @@ nav {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     width: fit-content;
     white-space: nowrap;
     margin-left: 0.6rem;
     letter-spacing: 1px;
-}
-
-.logo:hover {
-    color: #208d75;
 }
 
 a {
@@ -53,10 +49,6 @@ a {
         padding: 1rem;
     }
 
-    .logo {
-        margin: auto;
-    }
-    
     .link-row {
         display: none;
         grid-template-columns: auto;

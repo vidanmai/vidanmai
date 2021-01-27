@@ -46,25 +46,27 @@ export default function Post() {
         </div>
     );
     return (
-        <div className="postCase">
-            <div>
-                <h2 className="text-5xl p-1 text-center text-blue-500 font-semibold my-20">{postData.title}</h2>
-                <div className="author">
-                    <img src={urlFor(postData.authorImage).width(100).url()}
-                        alt="" />
-                    <p className="text-green-500">{postData.name}
-                    </p>
+        <div className="postCase py-5">
+            <div className="postBody">
+                <div className="postHead">
+                    <h2 className="text-5xl p-1 text-center text-blue-500 font-semibold">{postData.title}</h2>
+                    <div className="author">
+                        <img src={urlFor(postData.authorImage).width(100).url()}
+                            alt="" />
+                        <p className="text-green-500">{postData.name}
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <img className="postImg" src={urlFor(postData.mainImage).url()} alt="" />
-            <div className="body">
-                <BlockContent
-                    blocks={postData.body}
-                    projectId={sanityClient.clientConfig.projectId}
-                    dataset={sanityClient.clientConfig.dataset}
-                />
-                <br />
-                <p>Published at {new Date(postData.publishedAt).toLocaleDateString('en-GB')}</p>
+                <img className="postImg" src={urlFor(postData.mainImage).url()} alt="" />
+                <div className="body">
+                    <BlockContent
+                        blocks={postData.body}
+                        projectId={sanityClient.clientConfig.projectId}
+                        dataset={sanityClient.clientConfig.dataset}
+                    />
+                    <br />
+                    <p>Published at {new Date(postData.publishedAt).toLocaleDateString('en-GB')}</p>
+                </div>
             </div>
         </div>
     );

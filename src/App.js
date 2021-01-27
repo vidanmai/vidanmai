@@ -15,7 +15,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div className="App bg-gray-50">
+      <div className="App">
         <Nav />
         <Switch>
           <Route path="/" exact component={HomePage} />

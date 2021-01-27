@@ -1,6 +1,6 @@
 .homeGrid {
     display: grid;
-    grid-template-columns: 1fr 1.7fr;
+    grid-template-columns: 1fr 1.5fr;
     background: #22be9f;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #093637, #18ac8e);
