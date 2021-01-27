@@ -40,13 +40,13 @@ export default function BlogPosts() {
         <div className="postGrid">
             {blogPostsData &&
               blogPostsData.map((post, index) => (
-                <div className="postBox" key={post.slug.current}>
+                <div className="postBox shadow-xl transition duration-200 ease-in-out transform hover:-translate-y-5" key={post.slug.current}>
                   <Link to={"/blog/" + post.slug.current}>
                   <span key={index}>
-                    <img src={post.mainImage.asset.url} alt="" />
-                    <div className="postTitle">
-                      <h2>{post.title}</h2>
-                      <p>{new Date(post.publishedAt).toLocaleDateString('en-GB')}</p>
+                    <img src={post.mainImage.asset.url} alt="" className="rounded-t-md"/>
+                    <div className="postTitle rounded-b-sm shadow-xl p-2 bg-green-600 text-white">
+                      <h2 className="">{post.title}</h2>
+                      <p className="text-xs">{new Date(post.publishedAt).toLocaleDateString('en-GB')}</p>
                     </div>
                   </span>
                 </Link>

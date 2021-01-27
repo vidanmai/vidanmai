@@ -41,8 +41,40 @@ blockquote {
     margin: 1rem auto;
 }
 
+.loading {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    height: 30vh;
+}
+
+.loading img {
+    width: 64px;
+    height: 64px;
+    margin: auto;
+}
+
 @media only screen and (max-width: 900px) {
     .postCase {
-        width: 90%;
+        width: 100%;
+    }
+    .body {
+        width: 70%;
     }
 }
+
+@media only screen and (max-width: 900px) {
+    .postCase {
+        width: 100%;
+    }
+    .body {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .body {
+        width: 94%;
+    }
+}
+

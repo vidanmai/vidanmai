@@ -6,6 +6,7 @@ import sanityClient from "./SanityClient.js";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 import './style/post.css';
+import fidgetSpinner from './icons/fidgetspinner.png';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -39,7 +40,11 @@ export default function Post() {
             .catch(console.error);
     }, [slug]);
 
-    if (!postData) return <div className="loading">Loading...</div>;
+    if (!postData) return (
+        <div className="loading">
+            <img src={fidgetSpinner} alt="" className="animate-spin"/>
+        </div>
+    );
     return (
         <div className="postCase">
             <div>
@@ -60,7 +65,7 @@ export default function Post() {
                     projectId={sanityClient.clientConfig.projectId}
                     dataset={sanityClient.clientConfig.dataset}
                 />
-                <br/>
+                <br />
                 <p>Published at {new Date(postData.publishedAt).toLocaleDateString('en-GB')}</p>
             </div>
         </div>
