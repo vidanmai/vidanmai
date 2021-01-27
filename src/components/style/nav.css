@@ -2,8 +2,7 @@ nav {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    padding: 0.7rem 0;
-    border: 1px solid lightgrey;
+    padding: 3rem;
 }
 
 .link-row {
@@ -20,23 +19,21 @@ nav {
 }
 
 .link {
-    font-size: 18px;
-    margin: 0 1rem;
+    font-size: 1.4rem;
+    margin: 0 1.5rem;
     width: fit-content;
 }
 .link-row a:hover {
-
     border-radius: 10px;
     background-color: #1e857923;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
     width: fit-content;
     white-space: nowrap;
-    margin: auto 0;
-    margin-left: 1rem;
+    margin-left: 0.6rem;
     letter-spacing: 1px;
 }
 
@@ -53,6 +50,7 @@ a {
     nav {
         overflow: hidden;
         grid-template-columns: auto;
+        padding: 1rem;
     }
 
     .logo {

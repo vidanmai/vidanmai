@@ -6,6 +6,7 @@ import blogImg from './img/blog_travel.jpg';
 import codingImg from './img/codingBackground.jpg';
 import courseImg from './img/bookpage.jpg';
 import BlogPosts from './BlogPosts';
+import Academic from './Academic';
 import developer from './img/developer.svg';
 
 export default function HomePage() {
@@ -52,6 +53,7 @@ export default function HomePage() {
                 </div>
             </div>
             <BlogPosts/>
+            <Academic/>
         </div>
     );
 }

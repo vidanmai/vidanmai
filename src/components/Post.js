@@ -42,20 +42,18 @@ export default function Post() {
 
     if (!postData) return (
         <div className="loading">
-            <img src={fidgetSpinner} alt="" className="animate-spin"/>
+            <img src={fidgetSpinner} alt="" className="animate-spin" />
         </div>
     );
     return (
         <div className="postCase">
             <div>
-                <h2 className="title">{postData.title}</h2>
+                <h2 className="text-5xl p-1 text-center text-blue-500 font-semibold my-20">{postData.title}</h2>
                 <div className="author">
-                    <p>Written by {postData.name}
+                    <img src={urlFor(postData.authorImage).width(100).url()}
+                        alt="" />
+                    <p className="text-green-500">{postData.name}
                     </p>
-                    <img
-                        src={urlFor(postData.authorImage).width(100).url()}
-                        alt=""
-                    />
                 </div>
             </div>
             <img className="postImg" src={urlFor(postData.mainImage).url()} alt="" />

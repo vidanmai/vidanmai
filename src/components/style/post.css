@@ -1,4 +1,4 @@
-.postCase{
+.postCase {
     width: 50%;
     margin: 0 auto;
     margin-top: 2rem;
@@ -17,11 +17,12 @@
 
 .author p {
     margin: auto;
+    font-weight: bold;
     white-space: nowrap;
 }
 
 .author img {
-    margin-left: 5px;
+    margin-right: 5px;
     width: 32px;
     height: 32px;
     border-radius: 10px;
@@ -39,6 +40,26 @@ blockquote {
 
 .body {
     margin: 1rem auto;
+}
+
+.body h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.body h2 {
+    margin: auto;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+
+.body p {
+    margin: 0.2rem auto;
 }
 
 .loading {
@@ -77,4 +98,3 @@ blockquote {
         width: 94%;
     }
 }
-
