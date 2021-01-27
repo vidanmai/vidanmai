@@ -45,27 +45,26 @@ export default function Post() {
             <img src={fidgetSpinner} alt="" className="animate-spin" />
         </div>
     );
+    //<img src={urlFor(postData.authorImage).width(100).url()} alt="" />
+    //<p>Published {new Date(postData.publishedAt).toLocaleString().substring(0, 16)}</p>
     return (
-        <div className="postCase py-5">
-            <div className="postBody">
+        <div className="postCase my-2 lg:p-5 p-2">
+            <div className="postBody mx-auto 2xl:w-2/5 xl:w-3/5 lg:w-3/5 md:w-4/5 md:p-5">
                 <div className="postHead">
-                    <h2 className="text-5xl p-1 text-center text-blue-500 font-semibold">{postData.title}</h2>
-                    <div className="author">
-                        <img src={urlFor(postData.authorImage).width(100).url()}
-                            alt="" />
-                        <p className="text-green-500">{postData.name}
+                    <h2 className="text-5xl p-1 text-center tracking-wide uppercase font-semibold mb-10">{postData.title}</h2>
+                    <div className="my-2 text-center text-lg">
+                        <p>Written by {postData.name}
                         </p>
+                    <p>Published {new Date(postData.publishedAt).toString().substring(4, 10)}</p>
                     </div>
                 </div>
                 <img className="postImg" src={urlFor(postData.mainImage).url()} alt="" />
-                <div className="body">
+                <div className="body text antialiased subpixel-antialiased text-xl">
                     <BlockContent
                         blocks={postData.body}
                         projectId={sanityClient.clientConfig.projectId}
                         dataset={sanityClient.clientConfig.dataset}
                     />
-                    <br />
-                    <p>Published at {new Date(postData.publishedAt).toLocaleDateString('en-GB')}</p>
                 </div>
             </div>
         </div>

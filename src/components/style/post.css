@@ -1,12 +1,14 @@
-.postBody {
-    width: 50%;
-    margin: 0 auto;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 .postBody img {
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
+.postCase {
+    font-family: 'EB Garamond', serif;
+}
+/*
 .author {
     display: flex;
     width: fit-content;
@@ -26,6 +28,7 @@
     border-radius: 10px;
     object-fit: cover;
 }
+*/
 
 blockquote {
     font-style: italic;
@@ -36,28 +39,41 @@ blockquote {
     height: 48px;
 }
 
-.body {
-    margin: 1rem auto;
+.body h1, .body h2, .body h3, .body h4 {
+    margin: 1.25rem auto;
+    text-align: center;
 }
 
 .body h1 {
-    margin: auto;
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 2rem;
     font-weight: 700;
 }
 
 .body h2 {
-    margin: auto;
-    text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 1.75rem;
+    font-weight: 600;
+}
+
+.body h3 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+.body h4 {
+    font-size: 1.15rem;
+    line-height: 1.25rem;
     font-weight: 600;
 }
 
 .body p {
     margin: 0.2rem auto;
+}
+
+.body a {
+    color: #EF4444;
 }
 
 .loading {
@@ -71,28 +87,4 @@ blockquote {
     width: 64px;
     height: 64px;
     margin: auto;
-}
-
-@media only screen and (max-width: 900px) {
-    .postBody {
-        width: 100%;
-    }
-    .body {
-        width: 70%;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .postBody {
-        width: 100%;
-    }
-    .body {
-        width: 70%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .body {
-        width: 94%;
-    }
 }

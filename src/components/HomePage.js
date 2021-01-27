@@ -29,7 +29,7 @@ export default function HomePage() {
                     <Link to="/academic" id="academic">
                         <div className="box">
                             <img src={academicImg} alt="" />
-                            <h2>Academic</h2>
+                            <h2 className>Academic</h2>
                         </div>
                     </Link>
                     <Link to="/blog" id="blog">
