@@ -3,13 +3,14 @@ nav {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     padding: 3rem;
+    overflow: hidden;
 }
 
 .link-row {
     display: flex;
     align-content: flex-end;
     justify-content: space-evenly;
-    margin: auto 1rem;
+    margin: auto;
 }
 
 .link-row a {
@@ -20,7 +21,8 @@ nav {
 
 .link {
     font-size: 1.4rem;
-    margin: 0 1.5rem;
+    font-size: 1.8vw;
+    margin: 0 1.3vw;
     width: fit-content;
 }
 .link-row a:hover {

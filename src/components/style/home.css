@@ -1,12 +1,6 @@
 .homeGrid {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    background: #22be9f;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #093637, #18ac8e);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #297e80, #1ccaa7);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 2rem 1rem;
 }
 
