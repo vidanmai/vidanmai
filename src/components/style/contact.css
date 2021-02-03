@@ -10,10 +10,6 @@
     justify-content: center;
 }
 
-input {
-    color: white;
-}
-
 @media only screen and (max-width: 900px) {
     .contactGrid {
         grid-template-columns: auto;

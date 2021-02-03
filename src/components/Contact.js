@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <div className="case">
             <div className="contactContent bg-gradient-to-r from-green-400 to-green-600 py-10">
-                <div className="contactGrid bg-white p-10">
+                <div className="contactGrid bg-white py-20">
                    <div className="contactInfo">
                     <h1 className="text-4xl font-bold text-center">Contact</h1>
                 </div>
