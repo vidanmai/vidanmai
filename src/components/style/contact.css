@@ -1,3 +1,22 @@
-.contactGrid {
+.contactContent {
     min-height: 100vh;
+}
+
+.contactGrid {
+    display: grid;
+    width: 70%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+input {
+    color: white;
+}
+
+@media only screen and (max-width: 900px) {
+    .contactGrid {
+        grid-template-columns: auto;
+        width: 100%;
+    }
 }
