@@ -48,7 +48,7 @@ export default function Post() {
     //<img src={urlFor(postData.authorImage).width(100).url()} alt="" />
     //<p>Published {new Date(postData.publishedAt).toLocaleString().substring(0, 16)}</p>
     return (
-        <div className="postCase">
+        <div className="postCase my-2 lg:p-2 p-2">
             <div className="postBody mx-auto 2xl:w-2/5 xl:w-3/5 lg:w-3/5 md:w-4/5 md:p-5">
                 <div className="postHead">
                     <h2 className="text-5xl p-1 text-center tracking-wide uppercase font-semibold mb-10">{postData.title}</h2>
