@@ -5,7 +5,7 @@ class Academic extends React.Component {
         return (
             <div className="bg-green-700 py-10">
                 <h1 className="text-center text-white font-semibold">Bachelor</h1>
-                <div className="tableContainer xl:w-1/4 lg:w-2/4 md:w-3/4 sm:w-full m-auto">
+                <div className="tableContainer xl:w-2/4 lg:w-2/4 md:w-3/4 sm:w-full m-auto">
                     <table className="table-auto rounded-sm mx-auto my-10 bg-green-100">
                         <thead>
                             <tr>
@@ -30,7 +30,7 @@ class Academic extends React.Component {
                     </table>
                 </div>
                 <h1 className="text-center text-white font-semibold">Master</h1>
-                <div className="tableContainer xl:w-1/4 lg:w-2/4 md:w-3/4 sm:w-full m-auto">
+                <div className="tableContainer xl:w-2/4 lg:w-2/4 md:w-3/4 sm:w-full m-auto">
                     <table className="table-auto rounded-sm mx-auto my-10 bg-green-100">
                         <thead>
                             <tr>
