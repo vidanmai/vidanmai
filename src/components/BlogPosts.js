@@ -35,12 +35,12 @@ export default function BlogPosts() {
     <div>
       {/* Make img own component */}
       <img src={landingPic} alt="" id="blogLanding" />
-      <div className="case blog bg-gray-900 pt-2 pb-20">
-        <h1 className="text-center text-white font-bold m-5 text-3xl uppercase">Latest Posts</h1>
+      <div className="case blog border-t-2 pt-2">
+        <h1 className="text-center font-bold m-5 text-3xl uppercase">Latest Posts</h1>
         <div className="postGrid py-10">
             {blogPostsData &&
               blogPostsData.map((post, index) => (
-                <div className="postBox shadow-xl transition duration-200 ease-in-out transform hover:-translate-y-5" key={post.slug.current}>
+                <div className="postBox shadow-2xl transition duration-200 ease-in-out transform hover:scale-105" key={post.slug.current}>
                   <Link to={"/blog/" + post.slug.current}>
                   <span key={index}>
                     <img src={post.mainImage.asset.url} alt="" className="rounded-sm"/>

@@ -12,7 +12,7 @@ import developer from './img/developer.svg';
 export default function HomePage() {
     return (
         <div className="case" id="home">
-            <div className="homeGrid bg-gradient-to-r from-green-400 to-green-500">
+            <div className="homeGrid">
                 <div id="landing">
                     <div className="hero">
                         <div className="intro">
