@@ -2,9 +2,10 @@ nav {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    padding: 5px;
+    padding: 35px;
     overflow: hidden;
     border-bottom: 1px solid lightgrey;
+    text-transform: uppercase;
 }
 
 .link-row {
@@ -27,7 +28,7 @@ nav {
 }
 .link-row a:hover {
     border-radius: 10px;
-    background-color: #1e857923;
+    background-color: #22222222;
 }
 
 .logo {
@@ -37,6 +38,7 @@ nav {
     white-space: nowrap;
     margin-left: 0.6rem;
     letter-spacing: 1px;
+    border-bottom: 3px solid black;
 }
 
 a {

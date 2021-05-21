@@ -73,7 +73,7 @@ blockquote {
 }
 
 .body a {
-    color: #EF4444;
+    color: rgb(105, 153, 224);
 }
 
 .loading {

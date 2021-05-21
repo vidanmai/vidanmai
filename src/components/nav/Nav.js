@@ -9,7 +9,7 @@ class Nav extends React.Component {
         <nav className="navbar">
           <div>
             <Link to="/">
-              <li className="logo" id="logoButton">👨‍💻 Vi Dan Ba Mai</li>
+              <li className="logo" id="logoButton">Vi Dan Ba Mai</li>
             </Link>
           </div>
           <div className="space"></div>
