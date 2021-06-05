@@ -27,27 +27,27 @@ export default function HomePage() {
                 </div>
                 <div className="grid" id="right">
                     <Link to="/academic" id="academic">
-                        <div className="box">
+                        <div className="box transition duration-200 ease-in-out transform hover:scale-105">
                             <img src={academicImg} alt="" />
-                            <h2>Academic</h2>
+                            <h2 className="boxTitle">Academic</h2>
                         </div>
                     </Link>
                     <Link to="/blog" id="blog">
-                        <div className="box">
+                        <div className="box transition duration-200 ease-in-out transform hover:scale-105">
                             <img src={blogImg} alt="" />
-                            <h2>Blog</h2>
+                            <h2 className="boxTitle">Blog</h2>
                         </div>
                     </Link>
                     <Link to="/projects" id="projects">
-                        <div className="box">
+                        <div className="box transition duration-200 ease-in-out transform hover:scale-105">
                             <img src={codingImg} alt="" />
-                            <h2>Projects</h2>
+                            <h2 className="boxTitle">Projects</h2>
                         </div>
                     </Link>
                     <Link to="/courses" id="courses">
-                        <div className="box">
+                        <div className="box transition duration-200 ease-in-out transform hover:scale-105">
                             <img src={courseImg} alt="" />
-                            <h2>Courses</h2>
+                            <h2 className="boxTitle">Courses</h2>
                         </div>
                     </Link>
                 </div>
