@@ -26,6 +26,50 @@ class Academic extends React.Component {
                                 <td className="border border-green-600 p-5">INF1050</td>
                                 <td className="border border-green-600 p-5 ">Systems Development</td>
                             </tr>
+                            <tr className="bg-green-200">
+                                <td className="border border-green-600 p-5">INF2270</td>
+                                <td className="border border-green-600 p-5 ">Computer Architecture</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-green-600 p-5">INF2100</td>
+                                <td className="border border-green-600 p-5 ">Programming Project</td>
+                            </tr>
+                            <tr className="bg-green-200">
+                                <td className="border border-green-600 p-5">IN2090</td>
+                                <td className="border border-green-600 p-5 ">Databases and modelling</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-green-600 p-5">IN2140</td>
+                                <td className="border border-green-600 p-5 ">Introduction to operating systems and data communication</td>
+                            </tr>
+                            <tr className="bg-green-200">
+                                <td className="border border-green-600 p-5">IN2010</td>
+                                <td className="border border-green-600 p-5 ">Algorithms and Data Structures</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-green-600 p-5">IN2150</td>
+                                <td className="border border-green-600 p-5 ">IT in Organizations</td>
+                            </tr>
+                            <tr className="bg-green-200">
+                                <td className="border border-green-600 p-5">INF3510</td>
+                                <td className="border border-green-600 p-5 ">Information Security</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-green-600 p-5">INF3121</td>
+                                <td className="border border-green-600 p-5 ">Software Testing</td>
+                            </tr>
+                            <tr className="bg-green-200">
+                                <td className="border border-green-600 p-5">IN3100</td>
+                                <td className="border border-green-600 p-5 ">Information Technology and Society</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-green-600 p-5">IN3030</td>
+                                <td className="border border-green-600 p-5 ">Efficient Parallel Programming</td>
+                            </tr>
+                            <tr className="bg-green-200">
+                                <td className="border border-green-600 p-5">IN3050</td>
+                                <td className="border border-green-600 p-5 ">Introduction to Artificial Intelligence and Machine Learning</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -40,16 +84,16 @@ class Academic extends React.Component {
                         </thead>
                         <tbody>
                             <tr>
-                                <td className="border border-green-600 p-5 ">IN1000</td>
-                                <td className="border border-green-600 p-5 ">Introduction to Object-oriented programming</td>
+                                <td className="border border-green-600 p-5 ">IN5130</td>
+                                <td className="border border-green-600 p-5 ">Unassailable IT-systems</td>
                             </tr>
                             <tr className="bg-green-200">
-                                <td className="border border-green-600 p-5 ">INF1080</td>
-                                <td className="border border-green-600 p-5 ">Logical Methods for Computer Science</td>
+                                <td className="border border-green-600 p-5 ">IN5140</td>
+                                <td className="border border-green-600 p-5 ">Smart processes and agile methods in software engineering</td>
                             </tr>
                             <tr>
-                                <td className="border border-green-600 p-5">INF1050</td>
-                                <td className="border border-green-600 p-5 ">Systems Development</td>
+                                <td className="border border-green-600 p-5">IN5290</td>
+                                <td className="border border-green-600 p-5 ">Ethical Hacking</td>
                             </tr>
                         </tbody>
                     </table>
