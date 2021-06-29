@@ -95,6 +95,18 @@ class Academic extends React.Component {
                                 <td className="border border-green-600 p-5">IN5290</td>
                                 <td className="border border-green-600 p-5 ">Ethical Hacking</td>
                             </tr>
+                            <tr className="bg-green-200">
+                                <td className="border border-green-600 p-5">IN4240</td>
+                                <td className="border border-green-600 p-5 ">Software Testing</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-green-600 p-5">IN5030</td>
+                                <td className="border border-green-600 p-5 ">Protocols and Routing in the Internet</td>
+                            </tr>
+                            <tr className="bg-green-200">
+                                <td className="border border-green-600 p-5">IN5600</td>
+                                <td className="border border-green-600 p-5 ">Programming Ubiquitous Things</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
