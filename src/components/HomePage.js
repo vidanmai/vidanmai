@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import academicImg from './img/academic.jpeg';
 import blogImg from './img/blog_travel.jpg';
 import codingImg from './img/codingBackground.jpg';
-import courseImg from './img/bookpage.jpg';
 import BlogPosts from './BlogPosts';
 import Academic from './Academic';
 import developer from './img/developer.svg';
@@ -41,12 +40,6 @@ export default function HomePage() {
                         <div className="box transition duration-200 ease-in-out transform hover:scale-105">
                             <img src={codingImg} alt="" />
                             <h2 className="boxTitle">Projects</h2>
-                        </div>
-                    </Link>
-                    <Link to="/courses" id="courses">
-                        <div className="box transition duration-200 ease-in-out transform hover:scale-105">
-                            <img src={courseImg} alt="" />
-                            <h2 className="boxTitle">Courses</h2>
                         </div>
                     </Link>
                 </div>
