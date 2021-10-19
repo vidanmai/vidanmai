@@ -14,7 +14,8 @@
     "@sanity/default-login",
     "@sanity/desk-tool",
     "@sanity/dashboard",
-    "@sanity/vision"
+    "@sanity/vision",
+    "@sanity/code-input"
   ],
   "env": {
     "development": {

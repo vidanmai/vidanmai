@@ -15,6 +15,7 @@
   ],
   "dependencies": {
     "@sanity/base": "^2.1.6",
+    "@sanity/code-input": "^2.21.5",
     "@sanity/components": "^2.1.4",
     "@sanity/core": "^2.1.4",
     "@sanity/dashboard": "^2.1.4",
