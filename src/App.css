@@ -25,8 +25,20 @@ h2 {
   font-size: 1.2rem;
 }
 
-
 .case {
   width: 100%;
   margin: 0 auto;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.padding {
+  padding: 1rem;
 }
