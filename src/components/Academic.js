@@ -3,7 +3,7 @@ import React from 'react';
 class Academic extends React.Component {
     render() {
         return (
-            <div className="border-t-2 py-10">
+            <div className="py-10">
                 <h1 className="text-center uppercase tracking-wide font-semibold">Bachelor</h1>
                 <div className="tableContainer xl:w-2/4 lg:w-2/4 md:w-3/4 sm:w-full m-auto">
                     <table className="table-auto rounded-sm mx-auto my-10 bg-green-100">
