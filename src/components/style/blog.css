@@ -22,16 +22,16 @@
 
 .postTitle {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 8px;
+    right: 16px;
     background-color: black;
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .postBox {
+    position: relative;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    overflow: hidden;
 }
 
 .postBox img {
@@ -39,6 +39,7 @@
     height: 230px;
     object-fit: cover;
 }
+
 
 .loading {
     text-align: center;
