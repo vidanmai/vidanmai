@@ -13,14 +13,14 @@ export default function Contact() {
                         <form name="contact" method="POST" data-netlify="true">
                             <label htmlFor="username">Name:</label>
                             <br />
-                            <input type="text" placeholder="Enter name" className="p-1 text-black border-2 border-black focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" />
+                            <input type="text" name="name" placeholder="Enter name" className="p-1 text-black border-2 border-black focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" />
                             <br />
                             <label htmlFor="username">Email:</label>
                             <br />
-                            <input type="text" placeholder="Enter email" className="p-1 text-black border-2 border-black focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" />
+                            <input type="text" name="email" placeholder="Enter email" className="p-1 text-black border-2 border-black focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" />
                             <label className="block">
                                 <span className="text-black">Message</span>
-                                <textarea className="block w-4/5 p-1 mt-1 text-black border-2 border-black form-textarea focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                                <textarea name="message" className="block w-4/5 p-1 mt-1 text-black border-2 border-black form-textarea focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
                                     rows="4" placeholder="Enter message."></textarea>
                             </label>
                             <br/>

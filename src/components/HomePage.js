@@ -7,6 +7,7 @@ import codingImg from './img/codingBackground.jpg';
 import BlogPosts from './BlogPosts';
 import Academic from './Academic';
 import developer from './img/developer.svg';
+import Contact from './Contact'
 
 export default function HomePage() {
     return (
@@ -25,25 +26,26 @@ export default function HomePage() {
                 </div>
                 <div className="grid" id="right">
                     <Link to="/academic" id="academic">
-                        <div className="box transition duration-200 ease-in-out transform hover:scale-105">
+                        <div className="transition duration-200 ease-in-out transform box hover:scale-105">
                             <img src={academicImg} alt="" />
                             <h2 className="boxTitle">Academic</h2>
                         </div>
                     </Link>
                     <Link to="/blog" id="blog">
-                        <div className="box transition duration-200 ease-in-out transform hover:scale-105">
+                        <div className="transition duration-200 ease-in-out transform box hover:scale-105">
                             <img src={blogImg} alt="" />
                             <h2 className="boxTitle">Blog</h2>
                         </div>
                     </Link>
                     <Link to="/projects" id="projects">
-                        <div className="box transition duration-200 ease-in-out transform hover:scale-105">
+                        <div className="transition duration-200 ease-in-out transform box hover:scale-105">
                             <img src={codingImg} alt="" />
                             <h2 className="boxTitle">Projects</h2>
                         </div>
                     </Link>
                 </div>
             </div>
+            <Contact/>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280"><path fill="#273036" fillOpacity="1" d="M0,64L48,90.7C96,117,192,171,288,192C384,213,480,203,576,181.3C672,160,768,128,864,117.3C960,107,1056,117,1152,122.7C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
             <section className="grey-bg">
                 <BlogPosts textColor="white" />
