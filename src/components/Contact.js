@@ -11,6 +11,7 @@ export default function Contact() {
                     </div>
                     <div className="contactInput">
                         <form name="contact" method="POST" data-netlify="true">
+                            <input type="hidden" name="form-name" value="contact"/>
                             <label htmlFor="username">Name:</label>
                             <br />
                             <input type="text" name="name" placeholder="Enter name" className="p-1 text-black border-2 border-black focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" />
