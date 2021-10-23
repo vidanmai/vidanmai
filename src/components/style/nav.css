@@ -36,7 +36,7 @@ nav {
     font-weight: bold;
     width: fit-content;
     white-space: nowrap;
-    margin-left: 0.6rem;
+    margin: auto;
     letter-spacing: 1px;
     border-bottom: 3px solid black;
 }
