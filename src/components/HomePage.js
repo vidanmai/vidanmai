@@ -7,7 +7,6 @@ import codingImg from './img/codingBackground.jpg';
 import BlogPosts from './BlogPosts';
 import Academic from './Academic';
 import developer from './img/developer.svg';
-import Contact from './Contact'
 
 export default function HomePage() {
     return (
