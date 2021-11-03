@@ -14,7 +14,7 @@ export default function HomePage() {
             <div className="homeGrid">
                 <div id="landing">
                     <div className="hero">
-                        <div className="intro">
+                        <div id="intro">
                             <img src={developer} alt="" />
                             {/*
                             <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:1117468525&size=detail&theme=light" width="300" height="56" scrolling="no" frameBorder="0" style={{border: 'none', overflow:'hidden', margin: '0.5rem auto'}} allowtransparency="true"></iframe>

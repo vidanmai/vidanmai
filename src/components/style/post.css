@@ -1,12 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 .postBody img {
-    margin: 1rem auto;
+    margin: 2rem auto;
 }
 
 .postCase {
     font-family: 'EB Garamond', serif;
+    /*font-family: 'Merriweather', serif; */
 }
 /*
 .author {
@@ -40,8 +42,14 @@ blockquote {
 }
 
 .body h1, .body h2, .body h3, .body h4 {
+    width: 95%;
     margin: 1.25rem auto;
     text-align: center;
+}
+
+.body p, a, blockquote {
+    width: 95%;
+    margin: auto;
 }
 
 .body h1 {
@@ -69,6 +77,8 @@ blockquote {
 }
 
 .body p {
+    font-size: 1.2rem;
+    font-weight: 300;
     margin: 0.2rem auto;
 }
 
