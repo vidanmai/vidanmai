@@ -42,14 +42,8 @@ blockquote {
 }
 
 .body h1, .body h2, .body h3, .body h4 {
-    width: 95%;
     margin: 1.25rem auto;
     text-align: center;
-}
-
-.body p, a, blockquote {
-    width: 95%;
-    margin: auto;
 }
 
 .body h1 {
@@ -97,4 +91,16 @@ blockquote {
     width: 64px;
     height: 64px;
     margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .body h1, .body h2, .body h3, .body h4 {
+        width: 95%;
+    }
+    
+    .body p, a, blockquote {
+        width: 95%;
+        margin: auto;
+    }
+    
 }
