@@ -15,31 +15,39 @@
 
 .postGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 340px);
-    grid-gap: 50px;
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
 }
 
 .postTitle {
-    position: absolute;
+    position: relative;
+/*     position: absolute;
     bottom: 8px;
-    right: 16px;
-    background-color: black;
-    color: white;
+    right: 16px; */
+    background-color: #F9FAFB;
 }
 
 .postBox {
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin: 1rem;
     overflow: hidden;
 }
 
 .postBox img {
     width: 100%;
-    height: 230px;
+    height: 70vh;
     object-fit: cover;
+    transition: transform 1s ease;
+    z-index: 0;
 }
 
+.postBox:hover img {
+    transform: scale(1.1);
+}
+
+.postDate {
+    color: #4d4d4d;
+}
 
 .loading {
     text-align: center;

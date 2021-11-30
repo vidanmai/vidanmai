@@ -5,7 +5,7 @@ nav {
     padding: 35px;
     overflow: hidden;
     border-bottom: 1px solid lightgrey;
-    text-transform: uppercase;
+    background-color: white;
 }
 
 .link-row {
@@ -28,7 +28,7 @@ nav {
 }
 .link-row a:hover {
     border-radius: 10px;
-    background-color: #22222222;
+    background-color: #94949422;
 }
 
 .logo {
@@ -38,7 +38,8 @@ nav {
     white-space: nowrap;
     margin: auto;
     letter-spacing: 1px;
-    border-bottom: 3px solid black;
+    text-transform: uppercase;
+    border-bottom: 3px solid #EF4444;
 }
 
 a {
