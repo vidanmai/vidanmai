@@ -56,6 +56,7 @@
 
     .postGrid {
         grid-template-columns: repeat(auto-fit, 50vw);
+        grid-gap: 50px;
     }
 }
 

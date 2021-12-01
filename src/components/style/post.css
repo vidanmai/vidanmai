@@ -10,8 +10,9 @@
 
 .postCase {
     /* font-family: 'EB Garamond', serif; */
-    font-family: 'Inconsolata', monospace;
+    /* font-family: 'Inconsolata', monospace; */
     /*font-family: 'Merriweather', serif; */
+    font-family: 'Times New Roman', Times, serif;
 }
 /*
 .author {
@@ -34,6 +35,11 @@
     object-fit: cover;
 }
 */
+
+#authorText {
+    color: #707070;
+    font-size: 1rem;
+}
 
 blockquote {
     font-style: italic;
@@ -74,13 +80,13 @@ blockquote {
 }
 
 .body p {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     font-weight: 300;
     margin: 0.2rem auto;
 }
 
 .body a {
-    color: #303437;
+    color: black;
 }
 
 .loading {
