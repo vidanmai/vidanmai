@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "./SanityClient";
 import './style/blog.css';
-import landingPic from './img/world-map-unsplash.jpg';
 
 export default function BlogPosts(props) {
   const [blogPostsData, setBlogPosts] = useState(null);
