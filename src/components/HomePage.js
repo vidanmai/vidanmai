@@ -10,7 +10,7 @@ import developer from './img/developer.svg';
 
 export default function HomePage() {
     return (
-        <div className="case" id="home">
+        <div className="container case" id="home">
             <div className="homeGrid">
                 <div id="landing">
                     <div className="hero">

@@ -33,7 +33,7 @@ export default function BlogPosts(props) {
   return (
     <div>
       {/* Make img own component */}
-      <div className="py-10 case blog">
+      <div className="container py-10 case blog">
         <h1 className="text-3xl font-bold text-center uppercase">Latest Posts</h1>
         <div className="py-10 postGrid">
           {blogPostsData &&

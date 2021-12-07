@@ -6,7 +6,6 @@ html {
   padding: 0;
   font-family: 'IBM Plex Sans Hebrew', sans-serif;
   /* font-family: 'Source Code Pro', monospace; */
-  /* background-color: #F9FAFB; */
   background-color: #F9FAFB;
   font-size: 18px;
   color: #121212;
@@ -32,7 +31,6 @@ h2 {
 }
 
 .container {
-  width: 70%;
   margin: auto;
 }
 
@@ -43,4 +41,16 @@ h2 {
 
 .padding {
   padding: 1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
 }
