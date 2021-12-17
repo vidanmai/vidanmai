@@ -6,7 +6,7 @@ import sanityClient from "./SanityClient.js";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 import './style/post.css';
-import fidgetSpinner from './icons/fidgetspinner.png';
+//import spinner from './icons/spinner.svg';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -42,7 +42,8 @@ export default function Post() {
 
     if (!postData) return (
         <div className="loading">
-            <img src={fidgetSpinner} alt="" className="animate-spin" />
+            {/* <img src={spinner} alt="" className="animate-spin" /> */}
+            <p>Loading...</p>
         </div>
     );
     //<img src={urlFor(postData.authorImage).width(100).url()} alt="" />
