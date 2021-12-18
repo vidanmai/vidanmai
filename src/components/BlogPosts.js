@@ -31,10 +31,7 @@ export default function BlogPosts(props) {
     return new Date(b.publishedAt) - new Date(a.publishedAt);
   })
   return (
-    <div>
-      {/* Make img own component */}
       <div className="container py-10 case blog">
-        <h1 className="text-3xl font-bold text-center uppercase">Latest Posts</h1>
         <div className="py-10 postGrid">
           {blogPostsData &&
             blogPostsData.map((post, index) => (
@@ -52,6 +49,5 @@ export default function BlogPosts(props) {
             ))}
         </div>
       </div>
-    </div>
   );
 }
