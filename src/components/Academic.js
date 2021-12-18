@@ -9,8 +9,8 @@ class Academic extends React.Component {
                     <table className="mx-auto my-10 rounded-sm table-auto">
                         <thead>
                             <tr className="bg-green-200">
-                                <th className="w-1/5 p-5 text-green-400 border border-green-600">Course</th>
-                                <th className="w-4/5 p-5 text-green-400 border border-green-600">Name</th>
+                                <th className="w-1/5 p-5 border border-green-600">Course</th>
+                                <th className="w-4/5 p-5 border border-green-600">Name</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -78,8 +78,8 @@ class Academic extends React.Component {
                     <table className="mx-auto my-10 rounded-sm table-auto">
                         <thead>
                             <tr className="bg-green-200">
-                                <th className="w-1/5 p-5 text-green-400 border border-green-600">Course</th>
-                                <th className="w-4/5 p-5 text-green-400 border border-green-600">Name</th>
+                                <th className="w-1/5 p-5 border border-green-600">Course</th>
+                                <th className="w-4/5 p-5 border border-green-600">Name</th>
                             </tr>
                         </thead>
                         <tbody>
