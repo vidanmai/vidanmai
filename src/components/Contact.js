@@ -28,19 +28,19 @@ export default function Contact() {
                             <input type="hidden" name="form-name" value="contact" />
                             <label>Name</label>
                             <br />
-                            <input type="text" placeholder="Enter your name" name="name" className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-green-700 focus:border-transparent" />
+                            <input type="text" placeholder="Enter your name" name="name" className="w-full px-3 py-2 leading-tight text-gray-700 shadow appearance-none focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-green-700 focus:border-transparent" />
                             <br />
                             <br />
                             <label>Email</label>
                             <br />
-                            <input type="email" placeholder="Enter your email" name="email" className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-green-700 focus:border-transparent" />
+                            <input type="email" placeholder="Enter your email" name="email" className="w-full px-3 py-2 leading-tight text-gray-700 shadow appearance-none focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-green-700 focus:border-transparent" />
                             <br />
                             <br />
                             <label>Send me a message! 😄 </label>
                             <br />
-                            <textArea placeholder="Enter your message" name="message" className="block w-full p-5 px-3 py-2 mt-1 text-black border rounded shadow form-textarea focus:outline-none focus:ring-2 focus:ring-green-700 focus:border-transparent"></textArea>
+                            <textArea placeholder="Enter your message" name="message" className="block w-full p-5 px-3 py-2 mt-1 text-black shadow form-textarea focus:outline-none focus:ring-2 focus:ring-green-700"></textArea>
                             <br />
-                            <button type="submit" className="px-4 py-2 font-semibold text-green-700 bg-transparent border border-green-700 rounded hover:bg-green-700 hover:text-white hover:border-transparent">Send</button>
+                            <button type="submit" className="px-4 py-2 font-semibold text-green-700 bg-white border-2 border-black hover:bg-green-800 hover:text-white">Send</button>
                         </form>
                     </div>
                 </div>

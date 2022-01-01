@@ -4,8 +4,8 @@ nav {
     grid-template-columns: 1fr 2fr 1fr;
     padding: 35px;
     overflow: hidden;
-    border-bottom: 1px solid lightgrey;
-    background-color: white;
+    border-bottom: 1px solid rgb(97, 95, 95);
+    background-color: #E6CFC8;
 }
 
 .link-row {
@@ -27,8 +27,7 @@ nav {
     width: fit-content;
 }
 .link-row a:hover {
-    border-radius: 10px;
-    background-color: #94949422;
+    background-color: #58585822;
 }
 
 .logo {

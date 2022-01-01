@@ -8,6 +8,10 @@
     /* font-family: 'Merriweather', serif; */
 }
 
+#blogPosts {
+    background-color: #F3E5D6;
+}
+
 .postGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, 384px);
@@ -18,13 +22,15 @@
 
 .postTitle {
     position: relative;
-    background-color: #F9FAFB;
-    padding: 1rem 0;
+    background-color: white;
+    padding: 1rem 1rem;
+    border-top: 2px solid black;
 }
 
 .postBox {
     position: relative;
     overflow: hidden;
+    border: 2px solid black;
 }
 
 .postBox img {
@@ -66,6 +72,6 @@
         padding: 1rem 0;
     }
     .postBox img {
-        height: 384px;
+        height: 320px;
     }
 }
