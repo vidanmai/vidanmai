@@ -11,6 +11,10 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+.contactGrid input, .contactGrid textarea {
+    border: 2px solid black;
+}
+
 #contactInput {
     padding: 0 1rem;
     max-width: 350px;
