@@ -13,13 +13,13 @@
     grid-template-columns: repeat(auto-fit, 384px);
     justify-content: space-evenly;
     grid-gap: 20px;
-    padding: 2rem;
+    padding: 0.5rem 0;
 }
 
 .postTitle {
     position: relative;
     background-color: #F9FAFB;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
 }
 
 .postBox {
