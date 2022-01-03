@@ -20,14 +20,10 @@
     font-size: 50px;
 }
 
-#intro {
-    min-height: 350px;
-}
 
 #landing img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
     margin: auto;
 }
 
