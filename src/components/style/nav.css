@@ -4,8 +4,7 @@ nav {
     grid-template-columns: 1fr 2fr 1fr;
     padding: 35px;
     overflow: hidden;
-    border-bottom: 1px solid rgb(97, 95, 95);
-    background-color: #E6CFC8;
+    border-bottom: 2px solid rgb(97, 95, 95);
 }
 
 .link-row {

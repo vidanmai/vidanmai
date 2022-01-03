@@ -6,8 +6,8 @@ class Academic extends React.Component {
         return (
             <div className="py-10" id="academicContainer">
                 <h1 className="font-semibold tracking-wide text-center text-white uppercase">Bachelor</h1>
-                <div className="m-auto tableContainer xl:w-2/4 lg:w-2/4 md:w-3/4 sm:w-full">
-                    <table className="mx-auto my-10 rounded-sm table-auto">
+                <div className="m-auto tableContainer xl:w-2/4 lg:w-2/4 md:w-3/4 sm:w-full container">
+                    <table className="mx-auto my-10 rounded-sm table-auto border-2 border-solid border-black">
                         <thead>
                             <tr className="bg-green-400">
                                 <th className="w-1/5 p-5 border border-green-600">Course</th>
@@ -76,7 +76,7 @@ class Academic extends React.Component {
                 </div>
                 <h1 className="font-semibold tracking-wide text-center text-white uppercase">Master</h1>
                 <div className="m-auto tableContainer xl:w-2/4 lg:w-2/4 md:w-3/4 sm:w-full">
-                    <table className="mx-auto my-10 rounded-sm table-auto">
+                    <table className="mx-auto my-10 rounded-sm table-auto border-2 border-solid border-black">
                         <thead>
                             <tr className="bg-green-400">
                                 <th className="w-1/5 p-5 border border-green-600">Course</th>
