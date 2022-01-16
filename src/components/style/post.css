@@ -72,25 +72,27 @@ blockquote {
 }
 
 .body h3 {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     line-height: 1.5rem;
     font-weight: 600;
 }
 
 .body h4 {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     line-height: 1.25rem;
     font-weight: 600;
 }
 
 .body p {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     font-weight: 300;
     margin: 0.2rem auto;
+    text-align: justify;
 }
 
 .body a {
-    color: black;
+    font-size: 1.1rem;
+    color: rgb(235, 118, 10);
 }
 
 .loading {
@@ -108,11 +110,11 @@ blockquote {
 
 @media only screen and (max-width: 768px) {
     .body h1, .body h2, .body h3, .body h4 {
-        width: 95%;
+        width: 90%;
     }
     
     .body p, a, blockquote {
-        width: 95%;
+        width: 90%;
         margin: auto;
     }
     
