@@ -57,6 +57,7 @@ blockquote {
 .body h1, .body h2, .body h3, .body h4 {
     margin: 1.25rem auto;
     text-align: center;
+    padding: 0.5rem 0;
 }
 
 .body h1 {
@@ -81,6 +82,10 @@ blockquote {
     font-size: 1.2rem;
     line-height: 1.25rem;
     font-weight: 600;
+}
+
+.body p, a, blockquote {
+    padding: 0.5rem;
 }
 
 .body p {
