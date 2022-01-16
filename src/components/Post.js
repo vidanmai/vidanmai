@@ -52,7 +52,7 @@ export default function Post() {
             <p>Published {new Date(postData.publishedAt).toLocaleString().substring(0, 16)}</p> */}
             <div className="mx-auto postBody 2xl:w-2/5 xl:w-3/5 lg:w-3/5 md:w-4/5 md:p-5">
                 <div className="postHead">
-                    <h2 className="p-1 mb-3 text-5xl font-semibold tracking-wide text-center uppercase">{postData.title}</h2>
+                    <h2 className="p-1 mb-3 text-5xl font-semibold tracking-wide text-center">{postData.title}</h2>
                     <div className="my-2 text-lg text-center" id="authorText">
                         <p>Written by {postData.name}
                         </p>
