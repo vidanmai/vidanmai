@@ -41,9 +41,9 @@ export default function Post() {
     }, [slug]);
 
     if (!postData) return (
-        <div className="loading">
+        <div id="loading">
             {/* <img src={spinner} alt="" className="animate-spin" /> */}
-            <p>Loading...</p>
+            <p className="center">Loading...</p>
         </div>
     );
     return (
