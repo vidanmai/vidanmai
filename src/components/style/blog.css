@@ -25,6 +25,7 @@
     background-color: white;
     padding: 1rem 1rem;
     border-top: 2px solid black;
+    min-height: 128px;
 }
 
 .postBox {
